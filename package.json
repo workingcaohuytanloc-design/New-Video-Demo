@@ -1,0 +1,23 @@
+{
+  "name": "new-video-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "30s vertical motion-graphics ad, designed with /brag, assembled and rendered with Remotion",
+  "scripts": {
+    "audio": "bash scripts/prepare-audio.sh",
+    "studio": "remotion studio",
+    "render": "remotion render Ad brag-output/brag.mp4",
+    "still": "remotion still Ad",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.533",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.533"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.8",
+    "typescript": "5.8.3"
+  }
+}

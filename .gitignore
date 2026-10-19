@@ -1,0 +1,4 @@
+node_modules/
+out/
+brag-output/work/
+.DS_Store

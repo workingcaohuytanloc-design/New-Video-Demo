@@ -6,15 +6,22 @@
   "scripts": {
     "audio": "bash scripts/prepare-audio.sh",
     "studio": "remotion studio",
-    "render": "remotion render Ad brag-output/brag.mp4",
+    "render": "remotion render Ad brag-output/brag.mp4 --props=./content.json",
     "still": "remotion still Ad",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@fontsource/be-vietnam-pro": "5.2.8",
+    "@fontsource/jetbrains-mono": "5.2.8",
     "@remotion/cli": "4.0.533",
+    "@remotion/fonts": "4.0.533",
+    "@remotion/layout-utils": "4.0.533",
+    "@remotion/zod-types": "4.0.533",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "remotion": "4.0.533"
+    "remotion": "4.0.533",
+    "simple-icons": "15.22.0",
+    "zod": "4.5.4"
   },
   "devDependencies": {
     "@types/react": "19.1.8",

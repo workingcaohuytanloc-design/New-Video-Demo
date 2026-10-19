@@ -1,7 +1,25 @@
-# Brag Plan: Ordex (30s vertical ad)
+# Brag Plan: Orthex (30s vertical ad)
+
+## Revision 2 (current)
+The user's second brief replaces the text-free version:
+- **On-screen Vietnamese headlines are now required.** They are uppercase Be Vietnam Pro 800 (with the Vietnamese subset bundled), white on dark and near-black on light, 3–5 words per line. Each line enters with a fast wipe at its voiceover cue and holds still.
+- **Real material replaces the abstract shapes:**
+  - the real Orthex app icon (`public/brand/orthex-logo.png`, used as-is) in the reserved top-left slot and on the scene 3 and 6 plates
+  - a syntax-highlighted, valid TypeScript file scrolling in the IDE
+  - a Jira ticket carrying the official Jira mark (from simple-icons)
+  - log rows with timestamp pills
+  - a plan panel with written steps
+  - a "fine-tuned for coding" chip
+  - a ticking token counter
+- **The full CTA is on the end card:** headline, subline, a button that pulses once on "Tải…", and the download link.
+- **Composition:** one focal subject per scene, an out-of-focus and dimmed ghost-UI background, a vignette, rack focus (badge → headline in scene 1, card by card in scene 2), and nothing ever static.
+- **The brand on screen is Orthex.** The voiceover transcript spells it "Ordex".
+- **All text is editable** in the Studio Props panel or `content.json` (schema in `src/schema.ts`).
+- **Timing still follows the voiceover** (hard cut 12.83s). The headline lines are cued to the spoken phrases they repeat.
+- **No QR**, per the user's choice. The link `orthex.ai/download` is a placeholder until the real URL is provided.
 
 ## What is this?
-Ordex is an AI coding tool, fine-tuned for programming. It reads the codebase, plans, fixes the right spot, and uses fewer tokens. You hand it a ticket, get the result with a log, and can undo. The source material is the user's master prompt, six scene prompts, and the Vietnamese voiceover (`public/audio/voiceover.mp3`). There is no codebase to inspect.
+Orthex is an AI coding tool, fine-tuned for programming. It reads the codebase, plans, fixes the right spot, and uses fewer tokens. You hand it a ticket, get the result with a log, and can undo. The source material is the user's master prompt, six scene prompts, and the Vietnamese voiceover (`public/audio/voiceover.mp3`) and the Orthex logo. There is no codebase to inspect.
 
 ## The angle
 Two acts, one hard cut. Act 1 is what the voiceover describes: you're mid-ticket, Copilot runs out of credit, and each way out (buy more, wait for reset, switch tools) gets struck through in red. The hard cut lands on "Dùng ngay Ordex". Act 2 shows exactly what the voice claims, beat for beat: reads the codebase → plans → fixes the right spot → flat token cost → ticket in, log out, undo. The pictures stay text-free; the voice carries the copy.
@@ -60,7 +78,7 @@ Blocked ticket → Ordex reads the tree, plans, applies the diff → ticket done
 - SFX (Brag library, Kenney CC0): keyboard ticks, error buzz on the badge, soft thud on the freeze, card slides, dry hits on strikes, wood crack on the snap, soft impact on the cut, bell on the mark, clicks on checks and ticks, drop on dock, mouse click and switch on undo, bell on the end card
 - Master: −14 LUFS integrated (social standard)
 
-## Notes on the brief
+## Notes on the brief (revision 1, kept for history)
 - **The hard cut is at 12.83s**, on "Dùng ngay Ordex". That matches the master prompt's 13s act split. The per-scene prompt timings (0–4 / 4–10 / 10–13 / 13–22 / 22–27 / 27–30) were shifted to follow the voiceover. All timing lives in `src/timeline.ts` and the `*_AT` constants at the top of each scene.
 - **Diff uses green only**, so red stays reserved for the blocked state (the master prompt asks for both).
 - **The QR placeholder is an empty framed square**, with no code pattern (the negative prompt rules out QR codes).

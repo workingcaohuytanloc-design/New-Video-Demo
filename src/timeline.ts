@@ -19,8 +19,8 @@ export const f = (seconds: number) => Math.round(seconds * FPS);
 export const SCENES = {
   stall: [0, f(6.2)],
   blocked: [f(5.9), CUT - f(5.9)],
-  reconnect: [CUT, 54],
-  plan: [f(14.3), 258],
+  reconnect: [CUT, 60],
+  plan: [f(14.5), 252],
   ticket: [f(22.3), 157],
   endCard: [826, DURATION - 826], // beat-locked: 27.53s (track strong cue 27.30s)
 } as const;
